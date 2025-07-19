@@ -2,11 +2,9 @@ name: Flutter CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
@@ -14,22 +12,21 @@ jobs:
 
     defaults:
       run:
-        working-directory: client  # Burada client klasörünü belirttik
+        working-directory: client
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.10.5'
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.10.5'
 
-    - name: Flutter pub get
-      run: flutter pub get
+      - name: Check Flutter version
+        run: flutter --version
 
-    - name: Run tests
-      run: flutter test
+      - name: Flutter pub get
+        run: flutter pub get
 
-    - name: Check Flutter version
-      run: flutter --version
-
+      - name: Run tests
+        run: flutter test
