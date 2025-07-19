@@ -46,6 +46,6 @@ class MyApp extends StatelessWidget {
           '/song-detail': (context) => SongDetailPage(),
         },
       ),
-    );
+    ); // deneme
   }
 }
