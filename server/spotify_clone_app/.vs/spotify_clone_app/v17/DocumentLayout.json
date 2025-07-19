@@ -1,0 +1,253 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\models\\favoritesong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\models\\favoritesong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\helpers\\redishelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\helpers\\redishelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\controllers\\playlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\dto\\favoritesongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\dto\\favoritesongdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\dto\\playlistsongadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\dto\\playlistsongadddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\models\\playlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\models\\playlistsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|c:\\users\\ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC382D28-23B1-4381-9B91-7132503C027F}|spotify_clone_app\\spotify_clone_app.csproj|solutionrelative:spotify_clone_app\\models\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "spotify_clone_app\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:42:00.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Properties\\launchSettings.json",
+              "RelativeToolTip": "spotify_clone_app\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-17T13:41:43.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "spotify_clone_app\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T13:41:38.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Dockerfile",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Dockerfile",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Dockerfile",
+              "RelativeToolTip": "spotify_clone_app\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-16T13:42:13.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\docker-compose.yml",
+              "RelativeDocumentMoniker": "spotify_clone_app\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\docker-compose.yml",
+              "RelativeToolTip": "spotify_clone_app\\docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-07-15T20:31:24.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\appsettings.json",
+              "RelativeDocumentMoniker": "spotify_clone_app\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\appsettings.json",
+              "RelativeToolTip": "spotify_clone_app\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T19:46:23.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Controllers\\PlayerController.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Controllers\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Controllers\\PlayerController.cs",
+              "RelativeToolTip": "spotify_clone_app\\Controllers\\PlayerController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:47:17.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RedisHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Helpers\\RedisHelper.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Helpers\\RedisHelper.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Helpers\\RedisHelper.cs",
+              "RelativeToolTip": "spotify_clone_app\\Helpers\\RedisHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T18:44:45.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\Playlist.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Models\\Playlist.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\Playlist.cs",
+              "RelativeToolTip": "spotify_clone_app\\Models\\Playlist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T15:47:03.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlaylistSong.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\PlaylistSong.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Models\\PlaylistSong.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\PlaylistSong.cs",
+              "RelativeToolTip": "spotify_clone_app\\Models\\PlaylistSong.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:23:09.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FavoriteSong.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\FavoriteSong.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Models\\FavoriteSong.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Models\\FavoriteSong.cs",
+              "RelativeToolTip": "spotify_clone_app\\Models\\FavoriteSong.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:23:07.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlaylistSongAddDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\DTO\\PlaylistSongAddDto.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\DTO\\PlaylistSongAddDto.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\DTO\\PlaylistSongAddDto.cs",
+              "RelativeToolTip": "spotify_clone_app\\DTO\\PlaylistSongAddDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:23:06.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FavoriteSongDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\DTO\\FavoriteSongDto.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\DTO\\FavoriteSongDto.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\DTO\\FavoriteSongDto.cs",
+              "RelativeToolTip": "spotify_clone_app\\DTO\\FavoriteSongDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:23:04.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlaylistController.cs",
+              "DocumentMoniker": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Controllers\\PlaylistController.cs",
+              "RelativeDocumentMoniker": "spotify_clone_app\\Controllers\\PlaylistController.cs",
+              "ToolTip": "C:\\Users\\Ceyda\\source\\repos\\spotify_clone_app\\spotify_clone_app\\Controllers\\PlaylistController.cs",
+              "RelativeToolTip": "spotify_clone_app\\Controllers\\PlaylistController.cs",
+              "ViewState": "AgIAACkBAAAAAAAAAAAqwDQBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T14:23:03.066Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

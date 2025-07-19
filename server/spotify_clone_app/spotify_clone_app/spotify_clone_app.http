@@ -1,0 +1,6 @@
+@spotify_clone_app_HostAddress = http://localhost:5082
+
+GET {{spotify_clone_app_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

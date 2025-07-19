@@ -1,0 +1,196 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/05517709-02b6-46d6-82d7-c6d22c9714d4.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\05517709-02b6-46d6-82d7-c6d22c9714d4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/05517709-02b6-46d6-82d7-c6d22c9714d4.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\05517709-02b6-46d6-82d7-c6d22c9714d4.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/05517709-02b6-46d6-82d7-c6d22c9714d4.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1739d233-5680-4cb1-b042-d54f8786aa69.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1739d233-5680-4cb1-b042-d54f8786aa69.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1725417"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Jun 2025 19:22:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1739d233-5680-4cb1-b042-d54f8786aa69.szavm00i3f.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1739d233-5680-4cb1-b042-d54f8786aa69.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"szavm00i3f"},{"Name":"integrity","Value":"sha256-aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/1739d233-5680-4cb1-b042-d54f8786aa69.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1725417"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Jun 2025 19:22:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1969256d-0a51-410c-8ed8-f14ac1a7e775.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1969256d-0a51-410c-8ed8-f14ac1a7e775.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:24:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1969256d-0a51-410c-8ed8-f14ac1a7e775.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1969256d-0a51-410c-8ed8-f14ac1a7e775.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/1969256d-0a51-410c-8ed8-f14ac1a7e775.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:24:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1b3224d0-63a4-4592-a077-0c2a94e513d8.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1b3224d0-63a4-4592-a077-0c2a94e513d8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1725417"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Jul 2025 23:03:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/1b3224d0-63a4-4592-a077-0c2a94e513d8.szavm00i3f.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\1b3224d0-63a4-4592-a077-0c2a94e513d8.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"szavm00i3f"},{"Name":"integrity","Value":"sha256-aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/1b3224d0-63a4-4592-a077-0c2a94e513d8.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1725417"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022aJ8Zhz5jwVkgNq5BoREb\u002B8ocRWrr9QLdf\u002B7YH66ZaHQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Jul 2025 23:03:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/22f6ce29-4e18-4fa8-aee7-ac511985c355.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\22f6ce29-4e18-4fa8-aee7-ac511985c355.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/22f6ce29-4e18-4fa8-aee7-ac511985c355.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\22f6ce29-4e18-4fa8-aee7-ac511985c355.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/22f6ce29-4e18-4fa8-aee7-ac511985c355.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/450b40c1-2475-4298-a7ed-c2f63de94e3d.85hyos5n8y.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\450b40c1-2475-4298-a7ed-c2f63de94e3d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"85hyos5n8y"},{"Name":"integrity","Value":"sha256-TKOsCA1AcBwgFrCkichckpFKF3PG1r0A\u002BlXIlN9Ro6U="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/450b40c1-2475-4298-a7ed-c2f63de94e3d.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25137"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022TKOsCA1AcBwgFrCkichckpFKF3PG1r0A\u002BlXIlN9Ro6U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Jul 2025 23:04:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/450b40c1-2475-4298-a7ed-c2f63de94e3d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\450b40c1-2475-4298-a7ed-c2f63de94e3d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TKOsCA1AcBwgFrCkichckpFKF3PG1r0A\u002BlXIlN9Ro6U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"25137"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022TKOsCA1AcBwgFrCkichckpFKF3PG1r0A\u002BlXIlN9Ro6U=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Jul 2025 23:04:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/4df9f7bc-5dbc-49aa-8f9f-b3af26b66067.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\4df9f7bc-5dbc-49aa-8f9f-b3af26b66067.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:19:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/4df9f7bc-5dbc-49aa-8f9f-b3af26b66067.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\4df9f7bc-5dbc-49aa-8f9f-b3af26b66067.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/4df9f7bc-5dbc-49aa-8f9f-b3af26b66067.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:19:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/51ff0731-e99b-4585-b320-4209a4c41fe9.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\51ff0731-e99b-4585-b320-4209a4c41fe9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:21:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/51ff0731-e99b-4585-b320-4209a4c41fe9.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\51ff0731-e99b-4585-b320-4209a4c41fe9.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/51ff0731-e99b-4585-b320-4209a4c41fe9.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:21:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/743c69ec-f726-4604-8041-c616f6ec0e43.4le2a0aohb.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\743c69ec-f726-4604-8041-c616f6ec0e43.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4le2a0aohb"},{"Name":"integrity","Value":"sha256-qF\u002BkLx\u002BJL1LhnWiLgiIf4w9HbxL2zU499o5MDU1SlCw="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/743c69ec-f726-4604-8041-c616f6ec0e43.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"124481"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qF\u002BkLx\u002BJL1LhnWiLgiIf4w9HbxL2zU499o5MDU1SlCw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Jun 2025 11:36:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/743c69ec-f726-4604-8041-c616f6ec0e43.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\743c69ec-f726-4604-8041-c616f6ec0e43.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qF\u002BkLx\u002BJL1LhnWiLgiIf4w9HbxL2zU499o5MDU1SlCw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"124481"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022qF\u002BkLx\u002BJL1LhnWiLgiIf4w9HbxL2zU499o5MDU1SlCw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Jun 2025 11:36:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/8f7b83a5-8322-43b3-b8af-6e80c0db9e59.65i389x5hv.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\8f7b83a5-8322-43b3-b8af-6e80c0db9e59.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"65i389x5hv"},{"Name":"integrity","Value":"sha256-mprknoYAh68yZpuLvbFwe/Bve8FONOsgePLeDCe58TI="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/8f7b83a5-8322-43b3-b8af-6e80c0db9e59.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"277416"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mprknoYAh68yZpuLvbFwe/Bve8FONOsgePLeDCe58TI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Jun 2025 11:34:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/8f7b83a5-8322-43b3-b8af-6e80c0db9e59.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\8f7b83a5-8322-43b3-b8af-6e80c0db9e59.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mprknoYAh68yZpuLvbFwe/Bve8FONOsgePLeDCe58TI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"277416"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022mprknoYAh68yZpuLvbFwe/Bve8FONOsgePLeDCe58TI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Jun 2025 11:34:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/a041bc8f-9ddc-4f8f-aae7-906288c8d308.4rjucpssny.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\a041bc8f-9ddc-4f8f-aae7-906288c8d308.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4rjucpssny"},{"Name":"integrity","Value":"sha256-gPDYDZxG\u002Bv6M\u002BwhdDbcSqbOUXKMQEJAR53cx8bEV\u002B8I="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/a041bc8f-9ddc-4f8f-aae7-906288c8d308.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2546675"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gPDYDZxG\u002Bv6M\u002BwhdDbcSqbOUXKMQEJAR53cx8bEV\u002B8I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Jul 2025 14:23:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/a041bc8f-9ddc-4f8f-aae7-906288c8d308.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\a041bc8f-9ddc-4f8f-aae7-906288c8d308.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gPDYDZxG\u002Bv6M\u002BwhdDbcSqbOUXKMQEJAR53cx8bEV\u002B8I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2546675"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022gPDYDZxG\u002Bv6M\u002BwhdDbcSqbOUXKMQEJAR53cx8bEV\u002B8I=\u0022"},{"Name":"Last-Modified","Value":"Sun, 13 Jul 2025 14:23:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/b250e838-6d9a-42c0-adb0-41674d4954c9.m07q17l35s.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\b250e838-6d9a-42c0-adb0-41674d4954c9.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m07q17l35s"},{"Name":"integrity","Value":"sha256-\u002Biy93OVzviqM9HIQ3WWx5Pp7XAZet9ApiffmOpPnduE="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/b250e838-6d9a-42c0-adb0-41674d4954c9.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3771406"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022\u002Biy93OVzviqM9HIQ3WWx5Pp7XAZet9ApiffmOpPnduE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 10:16:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/b250e838-6d9a-42c0-adb0-41674d4954c9.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\b250e838-6d9a-42c0-adb0-41674d4954c9.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002Biy93OVzviqM9HIQ3WWx5Pp7XAZet9ApiffmOpPnduE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3771406"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022\u002Biy93OVzviqM9HIQ3WWx5Pp7XAZet9ApiffmOpPnduE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 10:16:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/dce9459d-738f-47dd-9cb6-656b08c4d78a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\dce9459d-738f-47dd-9cb6-656b08c4d78a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OXTKV5tA4cz\u002BRH4Ifypkx/6TGMXLmoU\u002BWGPfUVjk\u002BLc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"685946"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OXTKV5tA4cz\u002BRH4Ifypkx/6TGMXLmoU\u002BWGPfUVjk\u002BLc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 21:12:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/dce9459d-738f-47dd-9cb6-656b08c4d78a.n81qbeqe5w.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\dce9459d-738f-47dd-9cb6-656b08c4d78a.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n81qbeqe5w"},{"Name":"integrity","Value":"sha256-OXTKV5tA4cz\u002BRH4Ifypkx/6TGMXLmoU\u002BWGPfUVjk\u002BLc="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/dce9459d-738f-47dd-9cb6-656b08c4d78a.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"685946"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OXTKV5tA4cz\u002BRH4Ifypkx/6TGMXLmoU\u002BWGPfUVjk\u002BLc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 21:12:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/ecc3fae7-e576-459b-bae7-b87955eaa9d1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\ecc3fae7-e576-459b-bae7-b87955eaa9d1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/ecc3fae7-e576-459b-bae7-b87955eaa9d1.nhbwziggey.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\ecc3fae7-e576-459b-bae7-b87955eaa9d1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nhbwziggey"},{"Name":"integrity","Value":"sha256-1XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/ecc3fae7-e576-459b-bae7-b87955eaa9d1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2476168"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00221XKNFI2vCq2bQG2xY/4xScTBEPxrEcuyGGqfF56P4WQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Jun 2025 12:29:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/f59114ba-6707-4b44-a8bb-5efd8211416d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\f59114ba-6707-4b44-a8bb-5efd8211416d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9N7nGfoowPNx89288G7ZS4h3exxXrtDULhmaw0RxVS8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"90226"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229N7nGfoowPNx89288G7ZS4h3exxXrtDULhmaw0RxVS8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 21 Jun 2025 13:12:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/f59114ba-6707-4b44-a8bb-5efd8211416d.ovk1r90c80.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\f59114ba-6707-4b44-a8bb-5efd8211416d.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ovk1r90c80"},{"Name":"integrity","Value":"sha256-9N7nGfoowPNx89288G7ZS4h3exxXrtDULhmaw0RxVS8="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/f59114ba-6707-4b44-a8bb-5efd8211416d.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"90226"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229N7nGfoowPNx89288G7ZS4h3exxXrtDULhmaw0RxVS8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 21 Jun 2025 13:12:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/f7a21039-d0a7-4f31-bf75-b0bfdcf32a97.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\f7a21039-d0a7-4f31-bf75-b0bfdcf32a97.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0vlvSlJTDZizcfMUcLAHpaiYVUzzYjEgDij2BRKZ8QA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"196138"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220vlvSlJTDZizcfMUcLAHpaiYVUzzYjEgDij2BRKZ8QA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Jul 2025 21:19:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/spotify_clone_app/images/playlists/f7a21039-d0a7-4f31-bf75-b0bfdcf32a97.uko33x2d2a.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\playlists\f7a21039-d0a7-4f31-bf75-b0bfdcf32a97.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uko33x2d2a"},{"Name":"integrity","Value":"sha256-0vlvSlJTDZizcfMUcLAHpaiYVUzzYjEgDij2BRKZ8QA="},{"Name":"label","Value":"_content/spotify_clone_app/images/playlists/f7a21039-d0a7-4f31-bf75-b0bfdcf32a97.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"196138"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00220vlvSlJTDZizcfMUcLAHpaiYVUzzYjEgDij2BRKZ8QA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 14 Jul 2025 21:19:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
