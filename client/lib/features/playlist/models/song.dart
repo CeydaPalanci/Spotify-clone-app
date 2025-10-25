@@ -66,10 +66,19 @@ class Song {
     );
   }
 
-  // SongId'yi almak için extension method
-  int? get songId {
-    // Backend'den gelen verilerde id alanı olabilir
-    // Bu method'u kullanarak songId'yi alabiliriz
-    return null; // Şimdilik null döndürüyoruz
+  // SongId'yi almak için getter
+  String get id => deezerId;
+
+  // JSON'a çevirme metodu
+  Map<String, dynamic> toJson() {
+    return {
+      'deezerId': deezerId,
+      'title': title,
+      'artist': artist,
+      'album': album,
+      'streamUrl': streamUrl,
+      'imageUrl': imageUrl,
+      'duration': duration,
+    };
   }
 }

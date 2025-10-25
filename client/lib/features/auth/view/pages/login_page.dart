@@ -1,5 +1,6 @@
 import 'package:client/features/auth/Service/auth_services.dart';
 import 'package:client/features/auth/view/pages/signup_page.dart';
+import 'package:flutter/foundation.dart';
 import 'package:client/features/auth/view/widgets/auth_gradient_button.dart';
 import 'package:client/features/auth/view/widgets/custom_field.dart';
 import 'package:client/features/home/view/pages/home_page.dart';
@@ -90,7 +91,9 @@ class _LoginPageState extends State<LoginPage> {
                             email = profileData['email'];
                           }
                         } catch (e) {
-                          print('Profil bilgileri alınamadı: $e');
+                          if (kDebugMode) {
+                            print('Profil bilgileri alınamadı: $e');
+                          }
                           // Hata durumunda varsayılan değerler kullanılır
                         }
                         
@@ -99,6 +102,12 @@ class _LoginPageState extends State<LoginPage> {
                           username: username,
                           email: email,
                         );
+
+                        // Token'ın kaydedilip kaydedilmediğini kontrol et
+                        final storedToken = await UserService.getStoredToken();
+                        if (kDebugMode) {
+                          print('Login sonrası token kaydedildi');
+                        }
 
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(

@@ -25,4 +25,29 @@ public class RedisHelper
     {
         return await _db.StringGetAsync($"lastPlayed:{userId}");
     }
+
+    public async Task SetPlayHistoryAsync(string userId, string songsData)
+    {
+        await _db.StringSetAsync($"playHistory:{userId}", songsData, TimeSpan.FromDays(30));
+    }
+
+    public async Task<string?> GetPlayHistoryAsync(string userId)
+    {
+        return await _db.StringGetAsync($"playHistory:{userId}");
+    }
+
+    public async Task SetSongPositionAsync(string userId, string songId, int position)
+    {
+        await _db.StringSetAsync($"songPosition:{userId}:{songId}", position.ToString(), TimeSpan.FromDays(7));
+    }
+
+    public async Task<int?> GetSongPositionAsync(string userId, string songId)
+    {
+        var position = await _db.StringGetAsync($"songPosition:{userId}:{songId}");
+        if (int.TryParse(position, out int result))
+        {
+            return result;
+        }
+        return null;
+    }
 }

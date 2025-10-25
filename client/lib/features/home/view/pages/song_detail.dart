@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:client/core/theme/app_pallete.dart';
+import 'package:flutter/foundation.dart';
 import 'package:client/features/playlist/models/song.dart';
 import 'package:client/features/playlist/service/audio_service.dart';
 import 'package:client/features/playlist/service/favorite_service.dart';
@@ -66,18 +67,26 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
         isFavorite = isFav;
       });
     } catch (e) {
-      print('Favori durumu kontrol edilirken hata: $e');
+      if (kDebugMode) {
+        print('Favori durumu kontrol edilirken hata: $e');
+      }
     }
   }
 
   Future<String?> fetchDeezerPreviewUrl(int deezerId) async {
-    print("fetchDeezerPreviewUrl çağrıldı: $deezerId");
+    if (kDebugMode) {
+      print("fetchDeezerPreviewUrl çağrıldı: $deezerId");
+    }
     final response =
         await http.get(Uri.parse('https://api.deezer.com/track/$deezerId'));
-    print("API response: ${response.body}");
+    if (kDebugMode) {
+      print("API response alındı");
+    }
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      print("Preview: ${data['preview']}");
+      if (kDebugMode) {
+        print("Preview URL alındı");
+      }
       return data['preview'];
     }
     return null;
@@ -209,8 +218,8 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
                                   content: Text(isFavorite 
-                                    ? '${currentSong.title} beğenilenlerden çıkarıldı'
-                                    : '${currentSong.title} beğenilenlere eklendi'),
+                                    ? '${currentSong.title} beğenilenlere eklendi'
+                                    : '${currentSong.title} beğenilenlerden çıkarıldı'),
                                   backgroundColor: Color(0xFF1DB954),
                                   duration: Duration(seconds: 2),
                                 ),
@@ -225,7 +234,9 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                               );
                             }
                           } catch (e) {
-                            print('Favori işlemi hatası: $e');
+                            if (kDebugMode) {
+                              print('Favori işlemi hatası: $e');
+                            }
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text('Favori işlemi hatası: $e'),
@@ -342,15 +353,23 @@ class _MusicPlayerScreenState extends State<MusicPlayerScreen> {
                               await player.togglePlayPause();
                             } else {
                               // Yeni şarkı çal
-                              print("song.deezerId: ${currentSong.deezerId}");
+                              if (kDebugMode) {
+                                print("song.deezerId: ${currentSong.deezerId}");
+                              }
                               final previewUrl =
                                   await fetchDeezerPreviewUrl(int.parse(currentSong.deezerId));
-                              print("Gelen previewUrl: $previewUrl");
+                              if (kDebugMode) {
+                                print("Gelen previewUrl: $previewUrl");
+                              }
                               if (previewUrl != null && previewUrl.isNotEmpty) {
-                                print("Çalınıyor...");
+                                if (kDebugMode) {
+                                  print("Çalınıyor...");
+                                }
                                 await player.playSongWithPreview(currentSong, previewUrl);
                               } else {
-                                print("Preview yok!");
+                                if (kDebugMode) {
+                                  print("Preview yok!");
+                                }
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(
                                       content: Text('Bu şarkının önizlemesi yok!')),

@@ -1,16 +1,17 @@
 ﻿namespace spotify_clone_app.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore;
-    using System.Security.Cryptography;
-    using System.Text;
-    using Microsoft.IdentityModel.Tokens;
-    using System.IdentityModel.Tokens.Jwt;
-    using System.Security.Claims;
-    using spotify_clone_app.Models;
-    using System;
-    using spotify_clone_app.Data;
-    using spotify_clone_app.DTO;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using spotify_clone_app.Models;
+using System;
+using spotify_clone_app.Data;
+using spotify_clone_app.DTO;
+using Microsoft.AspNetCore.Authorization;
 
     namespace SpotifyAPI.Controllers
     {
@@ -113,6 +114,51 @@
                     signingCredentials: creds);
 
                 return new JwtSecurityTokenHandler().WriteToken(token);
+            }
+
+            [HttpDelete("delete-account")]
+            [Authorize]
+            public async Task<IActionResult> DeleteAccount()
+            {
+                try
+                {
+                    // JWT token'dan kullanıcı ID'sini al
+                    var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                    if (userIdClaim == null)
+                        return Unauthorized("Geçersiz token.");
+
+                    if (!int.TryParse(userIdClaim.Value, out int userId))
+                        return BadRequest("Geçersiz kullanıcı ID'si.");
+
+                    // Kullanıcıyı bul
+                    var user = await _context.Users.FindAsync(userId);
+                    if (user == null)
+                        return NotFound("Kullanıcı bulunamadı.");
+
+                    // Kullanıcının tüm verilerini sil
+                    // Önce ilişkili verileri sil
+                    var userPlaylists = await _context.Playlists.Where(p => p.UserId == userId).ToListAsync();
+                    var userFavorites = await _context.Favorites.Where(f => f.UserId == userId).ToListAsync();
+                    var userFavoriteSongs = await _context.FavoriteSongs.Where(fs => fs.UserId == userId).ToListAsync();
+
+                    // İlişkili verileri sil
+                    _context.Playlists.RemoveRange(userPlaylists);
+                    _context.Favorites.RemoveRange(userFavorites);
+                    _context.FavoriteSongs.RemoveRange(userFavoriteSongs);
+
+                    // Kullanıcıyı sil
+                    _context.Users.Remove(user);
+
+                    // Değişiklikleri kaydet
+                    await _context.SaveChangesAsync();
+
+                    return Ok("Hesap başarıyla silindi.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Hesap silme hatası: {ex.Message}");
+                    return StatusCode(500, "Hesap silinirken bir hata oluştu.");
+                }
             }
         }
     }

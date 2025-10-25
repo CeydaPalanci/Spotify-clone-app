@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import '../models/song.dart';
 import '../service/audio_service.dart';
 import '../service/recent_songs_service.dart';
+import '../service/redis_service.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -15,6 +17,7 @@ class PlayerViewModel extends ChangeNotifier {
   int _currentIndex = 0;
   bool _isShuffle = false;
   bool _isRepeat = false;
+  String _currentUserId = ''; // Kullanıcı ID'si için
 
   Song? get currentSong => _currentSong;
   bool get isPlaying => _isPlaying;
@@ -31,6 +34,10 @@ class PlayerViewModel extends ChangeNotifier {
     AudioService.positionStream.listen((position) {
       if (position != null) {
         _position = position;
+        // Şarkı pozisyonunu Redis'e kaydet
+        if (_currentSong != null && _currentUserId.isNotEmpty) {
+          RedisService.saveSongPosition(_currentUserId, _currentSong!.id, position);
+        }
         notifyListeners();
       }
     });
@@ -45,14 +52,19 @@ class PlayerViewModel extends ChangeNotifier {
     AudioService.playerStateStream.listen((state) {
       _isPlaying = state.playing;
       
-              // Şarkı bittiğinde otomatik geçiş
-        if (!state.playing && _position.inMilliseconds > 0 && 
-            _position.inMilliseconds >= _duration.inMilliseconds - 1000) {
-          playNext();
-        }
+      // Şarkı bittiğinde otomatik geçiş
+      if (!state.playing && _position.inMilliseconds > 0 && 
+          _position.inMilliseconds >= _duration.inMilliseconds - 1000) {
+        playNext();
+      }
       
       notifyListeners();
     });
+  }
+
+  // Kullanıcı ID'sini ayarla
+  void setUserId(String userId) {
+    _currentUserId = userId;
   }
 
   // Playlist ayarla
@@ -72,6 +84,11 @@ class PlayerViewModel extends ChangeNotifier {
     // Son çalınan şarkılar listesine ekle
     await RecentSongsService.addRecentSong(song);
     
+    // Redis'e son çalınan şarkıyı kaydet
+    if (_currentUserId.isNotEmpty) {
+      await RedisService.saveLastPlayedSong(_currentUserId, song);
+    }
+    
     // Audio service ile şarkıyı çal
     await AudioService.playPreview(song.streamUrl);
   }
@@ -83,6 +100,11 @@ class PlayerViewModel extends ChangeNotifier {
     
     // Son çalınan şarkılar listesine ekle
     await RecentSongsService.addRecentSong(song);
+    
+    // Redis'e son çalınan şarkıyı kaydet
+    if (_currentUserId.isNotEmpty) {
+      await RedisService.saveLastPlayedSong(_currentUserId, song);
+    }
     
     // Audio service ile şarkıyı çal
     await AudioService.playPreview(previewUrl);
@@ -151,17 +173,23 @@ class PlayerViewModel extends ChangeNotifier {
         if (previewUrl != null && previewUrl.isNotEmpty) {
           await playSongWithPreview(song, previewUrl);
         } else {
-          print('Preview URL bulunamadı: ${song.title}');
+          if (kDebugMode) {
+            print('Preview URL bulunamadı: ${song.title}');
+          }
           // Preview URL yoksa streamUrl'i dene
           await playSong(song);
         }
       } else {
-        print('Deezer API hatası: ${response.statusCode}');
+        if (kDebugMode) {
+          print('Deezer API hatası: ${response.statusCode}');
+        }
         // API hatası durumunda streamUrl'i dene
         await playSong(song);
       }
     } catch (e) {
-      print('Preview URL alma hatası: $e');
+      if (kDebugMode) {
+        print('Preview URL alma hatası: $e');
+      }
       // Hata durumunda streamUrl'i dene
       await playSong(song);
     }
@@ -215,5 +243,41 @@ class PlayerViewModel extends ChangeNotifier {
     _currentIndex = 0;
     AudioService.stop();
     notifyListeners();
+  }
+
+  // Redis'ten son çalınan şarkıyı yükle
+  Future<void> loadLastPlayedSong() async {
+    if (_currentUserId.isEmpty) return;
+    
+    final lastSong = await RedisService.getLastPlayedSong(_currentUserId);
+    if (lastSong != null) {
+      _currentSong = lastSong;
+      _isVisible = true;
+      notifyListeners();
+    }
+  }
+
+  // Redis'ten şarkı pozisyonunu yükle
+  Future<void> loadSongPosition() async {
+    if (_currentUserId.isEmpty || _currentSong == null) return;
+    
+    final position = await RedisService.getSongPosition(_currentUserId, _currentSong!.id);
+    if (position != null) {
+      await seek(position);
+    }
+  }
+
+  // Redis'ten çalma geçmişini yükle
+  Future<List<Song>> loadPlayHistory() async {
+    if (_currentUserId.isEmpty) return [];
+    
+    return await RedisService.getPlayHistory(_currentUserId);
+  }
+
+  // Çalma geçmişini Redis'e kaydet
+  Future<void> savePlayHistory() async {
+    if (_currentUserId.isEmpty || _playlist.isEmpty) return;
+    
+    await RedisService.savePlayHistory(_currentUserId, _playlist);
   }
 } 

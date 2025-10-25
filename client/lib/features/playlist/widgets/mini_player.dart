@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../viewmodel/player_viewmodel.dart';
 import '../models/song.dart';
+import '../service/redis_service.dart';
 
 class MiniPlayer extends StatefulWidget {
   const MiniPlayer({Key? key}) : super(key: key);
@@ -13,12 +14,36 @@ class MiniPlayer extends StatefulWidget {
 class _MiniPlayerState extends State<MiniPlayer> {
   bool _isDragging = false;
   double _sliderValue = 0.0;
+  String _currentUserId = 'user123'; // Gerçek uygulamada bu değer auth'dan gelecek
 
   String _formatDuration(Duration duration) {
     String twoDigits(int n) => n.toString().padLeft(2, '0');
     String twoDigitMinutes = twoDigits(duration.inMinutes.remainder(60));
     String twoDigitSeconds = twoDigits(duration.inSeconds.remainder(60));
     return "$twoDigitMinutes:$twoDigitSeconds";
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    // Widget yüklendiğinde kullanıcı ID'sini PlayerViewModel'e set et
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final player = Provider.of<PlayerViewModel>(context, listen: false);
+      player.setUserId(_currentUserId);
+      
+      // Son çalınan şarkıyı Redis'ten yükle
+      _loadLastPlayedSong();
+    });
+  }
+
+  Future<void> _loadLastPlayedSong() async {
+    final lastSong = await RedisService.getLastPlayedSong(_currentUserId);
+    if (lastSong != null) {
+      final player = Provider.of<PlayerViewModel>(context, listen: false);
+      if (player.currentSong == null) {
+        player.loadLastPlayedSong();
+      }
+    }
   }
 
   @override

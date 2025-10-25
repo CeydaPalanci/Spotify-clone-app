@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:client/features/home/view/api_constants.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/foundation.dart';
 
 class AuthService {
   static const String _tokenKey = 'jwt_token';
@@ -24,7 +25,9 @@ class AuthService {
     required String password,
   }) async {
     try {
-      print('Login isteği gönderiliyor: ${ApiConstants.baseUrl}/api/auth/login');
+      if (kDebugMode) {
+        print('Login isteği gönderiliyor');
+      }
       final response = await http.post(
       Uri.parse('${ApiConstants.baseUrl}/api/auth/login'),
         headers: {
@@ -37,7 +40,9 @@ class AuthService {
         }),
       );
 
-      print('Login yanıtı: ${response.statusCode} - ${response.body}');
+      if (kDebugMode) {
+        print('Login yanıtı: ${response.statusCode}');
+      }
 
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
@@ -63,7 +68,9 @@ class AuthService {
   }) async {
     http.Response? response;
     try {
-      print('Register isteği gönderiliyor: ${ApiConstants.baseUrl}/api/auth/register');
+      if (kDebugMode) {
+        print('Register isteği gönderiliyor');
+      }
       response = await http.post(
         Uri.parse('${ApiConstants.baseUrl}/api/auth/register'),
         headers: {
@@ -76,7 +83,9 @@ class AuthService {
         }),
       );
 
-      print('Register yanıtı: ${response.statusCode} - ${response.body}');
+      if (kDebugMode) {
+        print('Register yanıtı: ${response.statusCode}');
+      }
 
       if (response.statusCode == 200 || response.statusCode == 201) {
         // Yanıt JSON değilse, başarılı mesajını direkt kullan
@@ -96,7 +105,9 @@ class AuthService {
         throw Exception('Kayıt işlemi başarısız: Status Code: ${response.statusCode}, Response: ${response.body}');
       }
     } catch (e) {
-      print('Register hatası: $e');
+      if (kDebugMode) {
+        print('Register hatası: $e');
+      }
       // JSON parse hatası ise, başarılı mesajını kullan
       if (e is FormatException && response != null && response.body.trim() == 'Kayıt başarılı.') {
         onSuccess?.call(response.body);

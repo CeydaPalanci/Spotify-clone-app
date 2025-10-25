@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/song.dart';
+import 'package:flutter/foundation.dart';
 
 class RecentSongsService {
   static const String _recentSongsKey = 'recent_songs';
@@ -41,7 +42,9 @@ class RecentSongsService {
 
       await prefs.setString(_recentSongsKey, jsonEncode(recentSongs));
     } catch (e) {
-      print('Son çalınan şarkı kaydedilirken hata: $e');
+      if (kDebugMode) {
+        print('Son çalınan şarkı kaydedilirken hata: $e');
+      }
     }
   }
 

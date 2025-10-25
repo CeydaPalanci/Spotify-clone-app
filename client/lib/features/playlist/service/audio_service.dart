@@ -1,4 +1,5 @@
 import 'package:just_audio/just_audio.dart';
+import 'package:flutter/foundation.dart';
 
 class AudioService {
   static final AudioPlayer _player = AudioPlayer();
@@ -26,7 +27,9 @@ class AudioService {
       });
       
     } catch (e) {
-      print('Şarkı çalma hatası: $e');
+      if (kDebugMode) {
+        print('Şarkı çalma hatası: $e');
+      }
     }
   }
 
@@ -35,7 +38,9 @@ class AudioService {
       await _player.play();
       _isPlaying = true;
     } catch (e) {
-      print('Şarkı çalma hatası: $e');
+      if (kDebugMode) {
+        print('Şarkı çalma hatası: $e');
+      }
     }
   }
 
@@ -44,7 +49,9 @@ class AudioService {
       await _player.pause();
       _isPlaying = false;
     } catch (e) {
-      print('Şarkı durdurma hatası: $e');
+      if (kDebugMode) {
+        print('Şarkı durdurma hatası: $e');
+      }
     }
   }
 
@@ -54,7 +61,9 @@ class AudioService {
       _isPlaying = false;
       _currentUrl = null;
     } catch (e) {
-      print('Şarkı durdurma hatası: $e');
+      if (kDebugMode) {
+        print('Şarkı durdurma hatası: $e');
+      }
     }
   }
 
@@ -62,7 +71,9 @@ class AudioService {
     try {
       await _player.seek(position);
     } catch (e) {
-      print('Şarkı konumlandırma hatası: $e');
+      if (kDebugMode) {
+        print('Şarkı konumlandırma hatası: $e');
+      }
     }
   }
 

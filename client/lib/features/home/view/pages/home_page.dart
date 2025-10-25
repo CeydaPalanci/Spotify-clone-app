@@ -1,5 +1,6 @@
 import 'package:client/core/theme/app_pallete.dart';
 import 'package:client/features/home/view/pages/create_playlist.dart';
+import 'package:flutter/foundation.dart';
 import 'package:client/features/home/view/pages/search_page.dart';
 import 'package:client/features/playlist/widgets/mini_player.dart';
 import 'package:flutter/material.dart';
@@ -124,7 +125,9 @@ class _HomePageState extends State<HomePage> {
         });
       }
     } catch (e) {
-      print('Veri yüklenirken hata: $e');
+      if (kDebugMode) {
+        print('Veri yüklenirken hata: $e');
+      }
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -151,7 +154,9 @@ class _HomePageState extends State<HomePage> {
             'deezerId': artistInfo['id']?.toString() ?? '',
           });
         } catch (e) {
-          print('Sanatçı bilgisi çekilemedi: $e');
+          if (kDebugMode) {
+            print('Sanatçı bilgisi çekilemedi: $e');
+          }
           artists.add({
             'name': song.artist,
             'imageUrl': 'lib/assets/image/default-image.png',
@@ -178,7 +183,9 @@ class _HomePageState extends State<HomePage> {
         }
       }
     } catch (e) {
-      print('Sanatçı arama hatası: $e');
+      if (kDebugMode) {
+        print('Sanatçı arama hatası: $e');
+      }
     }
     
     return {};
@@ -366,15 +373,96 @@ class _HomePageState extends State<HomePage> {
               ),
               const Spacer(),
               ListTile(
-                leading: const Icon(Icons.logout, color: Colors.red),
+                leading: const Icon(Icons.delete_forever, color: Colors.red),
                 title: const Text(
-                  'Çıkış Yap',
+                  'Hesabını Sil',
                   style: TextStyle(color: Colors.red),
                 ),
                 onTap: () async {
-                  // Kullanıcı bilgilerini temizle
-                  await UserService.clearUserInfo();
-                  Navigator.pushReplacementNamed(context, '/login');
+                  // Hesap silme onayı
+                  bool? confirmDelete = await showDialog<bool>(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        backgroundColor: Colors.grey[900],
+                        title: Text(
+                          'Hesabını Sil',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        content: Text(
+                          'Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.of(context).pop(false),
+                            child: Text(
+                              'İptal',
+                              style: TextStyle(color: Colors.grey[400]),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () => Navigator.of(context).pop(true),
+                            child: Text(
+                              'Sil',
+                              style: TextStyle(color: Colors.red),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+
+                  if (confirmDelete == true) {
+                    // Loading göster
+                    showDialog(
+                      context: context,
+                      barrierDismissible: false,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          backgroundColor: Colors.grey[900],
+                          content: Row(
+                            children: [
+                              CircularProgressIndicator(
+                                color: Color(0xFF1DB954),
+                                strokeWidth: 2,
+                              ),
+                              SizedBox(width: 20),
+                              Text(
+                                'Hesap siliniyor...',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    );
+
+                    // Hesabı sil
+                    bool success = await UserService.deleteAccount();
+                    
+                    // Loading dialogunu kapat
+                    Navigator.of(context).pop();
+
+                    if (success) {
+                      // Başarılı silme
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Hesabınız başarıyla silindi.'),
+                          backgroundColor: Color(0xFF1DB954),
+                        ),
+                      );
+                      Navigator.pushReplacementNamed(context, '/login');
+                    } else {
+                      // Hata durumu
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Hesap silinirken bir hata oluştu.'),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
+                    }
+                  }
                 },
               ),
               const SizedBox(height: 20),

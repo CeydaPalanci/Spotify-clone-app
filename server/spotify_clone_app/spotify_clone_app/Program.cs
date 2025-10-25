@@ -10,7 +10,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(5090); // tüm IP’lerden gelen istekleri dinler
+    options.ListenAnyIP(5090); // tï¿½m IPï¿½lerden gelen istekleri dinler
 });
 
 
@@ -25,6 +25,13 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
         sqlOptions => sqlOptions.EnableRetryOnFailure())
 );
+
+// Redis servisini ekle
+builder.Services.AddSingleton<RedisHelper>(provider =>
+{
+    var redisConnectionString = builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379";
+    return new RedisHelper(redisConnectionString);
+});
 
 builder.Services.AddCors(options =>
 {
@@ -64,7 +71,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-Console.WriteLine($"Baðlantý Dizesi: {connectionString}");
+Console.WriteLine($"Baï¿½lantï¿½ Dizesi: {connectionString}");
 
 
 

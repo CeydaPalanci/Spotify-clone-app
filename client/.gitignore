@@ -63,3 +63,38 @@ _ReSharper*/
 *.pdb
 *.mdb
 *.cache
+
+# Debug build files
+server/spotify_clone_app/spotify_clone_app/bin/
+server/spotify_clone_app/spotify_clone_app/obj/
+client/build/
+
+# Configuration files with secrets
+**/appsettings.json
+**/appsettings.Development.json
+**/launchSettings.json
+**/appsettings.Production.json
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Flutter
+client/.dart_tool/
+client/.packages
+client/.pub-cache/
+client/.pub/
+client/build/
+client/.flutter-plugins
+client/.flutter-plugins-dependencies
+
+# .NET
+server/spotify_clone_app/spotify_clone_app/bin/
+server/spotify_clone_app/spotify_clone_app/obj/
+server/spotify_clone_app/spotify_clone_app/out/

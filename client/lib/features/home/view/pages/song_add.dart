@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'dart:async';
 import 'package:client/core/theme/app_pallete.dart';
+import 'package:flutter/foundation.dart';
 import 'package:client/features/home/view/api_constants.dart';
 import 'package:client/features/playlist/service/playlist_service.dart';
 import 'package:client/features/playlist/viewmodel/player_viewmodel.dart';
@@ -190,8 +191,9 @@ class _SongAddPageState extends State<SongAddPage> {
           try {
             allSongs.add(Song.fromDeezer(json));
           } catch (e) {
-            print('Şarkı dönüştürme hatası: $e');
-            print('Problemli JSON: $json');
+            if (kDebugMode) {
+              print('Şarkı dönüştürme hatası: $e');
+            }
             continue; // Bu şarkıyı atla ve devam et
           }
         }
@@ -203,11 +205,14 @@ class _SongAddPageState extends State<SongAddPage> {
           _songs = limitedSongs;
         });
       } else {
-        print("Şarkılar yüklenemedi: ${response.statusCode}");
-        print("Response body: ${response.body}");
+        if (kDebugMode) {
+          print("Şarkılar yüklenemedi: ${response.statusCode}");
+        }
       }
     } catch (e) {
-      print("Deezer API'den şarkı çekme hatası: $e");
+      if (kDebugMode) {
+        print("Deezer API'den şarkı çekme hatası: $e");
+      }
       // Kullanıcıya hata mesajı göster
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -221,13 +226,19 @@ class _SongAddPageState extends State<SongAddPage> {
   }
 
   Future<String?> fetchDeezerPreviewUrl(int deezerId) async {
-    print("fetchDeezerPreviewUrl çağrıldı: $deezerId");
+    if (kDebugMode) {
+      print("fetchDeezerPreviewUrl çağrıldı: $deezerId");
+    }
     final response =
         await http.get(Uri.parse('https://api.deezer.com/track/$deezerId'));
-    print("API response: ${response.body}");
+    if (kDebugMode) {
+      print("API response alındı");
+    }
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
-      print("Preview: ${data['preview']}");
+      if (kDebugMode) {
+        print("Preview URL alındı");
+      }
       return data['preview'];
     }
     return null;

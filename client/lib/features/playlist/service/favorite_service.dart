@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:client/features/home/view/api_constants.dart';
 import 'package:client/features/playlist/service/playlist_service.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter/foundation.dart';
 
 class FavoriteService {
   static Future<bool> addFavorite(Map<String, dynamic> song) async {
@@ -25,9 +26,9 @@ class FavoriteService {
     };
 
     // Önce endpoint'i test edelim
-    print("🔍 Favori ekleme endpoint'i test ediliyor...");
-    print("🔍 URL: ${ApiConstants.baseUrl}/api/playlists/favorite-add");
-    print("🔍 Headers: $headers");
+    if (kDebugMode) {
+      print("🔍 Favori ekleme endpoint'i test ediliyor...");
+    }
     
     final response = await http.post(
       Uri.parse('${ApiConstants.baseUrl}/api/playlists/favorite-add'),
@@ -35,13 +36,14 @@ class FavoriteService {
       body: jsonEncode(body),
     );
 
-    print("POST body: ${jsonEncode(body)}");
-    print("Favori ekleme cevabı: ${response.statusCode}");
-    print("Response body: ${response.body}");
+    if (kDebugMode) {
+      print("Favori ekleme cevabı: ${response.statusCode}");
+    }
 
     if (response.statusCode != 200) {
-      print("❌ Favori ekleme başarısız: ${response.statusCode}");
-      print("❌ Hata detayı: ${response.body}");
+      if (kDebugMode) {
+        print("❌ Favori ekleme başarısız: ${response.statusCode}");
+      }
     }
 
     return response.statusCode == 200;
@@ -56,8 +58,9 @@ class FavoriteService {
       headers: headers,
     );
 
-    print('Favoriden çıkarma cevabı: ${response.statusCode}');
-    print('Response body: ${response.body}');
+    if (kDebugMode) {
+      print('Favoriden çıkarma cevabı: ${response.statusCode}');
+    }
     return response.statusCode == 200;
   }
 
@@ -74,7 +77,9 @@ class FavoriteService {
       final List<dynamic> data = jsonDecode(response.body);
       return List<Map<String, dynamic>>.from(data);
     } else {
-      print('Favori getirme hatası: ${response.statusCode}');
+      if (kDebugMode) {
+        print('Favori getirme hatası: ${response.statusCode}');
+      }
       return [];
     }
   }
